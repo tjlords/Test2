@@ -822,9 +822,12 @@ async def txt_handler(bot: Client, m: Message):
      
 
             elif "classplusapp.com/drm/" in url:
-              #  url = f"https://sainibotsdrm.vercel.app/api?url={url}&token={cptoken}&auth=4443683167"
+                url = f"https://dragoapi.vercel.app/classplus?link={url}&token={cptoken}"
+                url = f"https://sainibotsdrm.vercel.app/api?url={url}&token={cptoken}&auth=4443683167"
                 url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url={url}@botupdatevip4u&user_id=7268596608"
+                url = f"https://covercel.vercel.app/extract_keys?url={url}@bots_updatee&user_id={user_id}"
 
+                
                 result = helper.get_mps_and_keys1(url)
                 if result is None:
                     await bot.send_message(channel_id, "❌ Token failed. Trying next one...")
